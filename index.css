@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #232F3E;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+}
+
+button {
+    padding: 10px;
+    background-color: #FFC300;
+    border: none;
+    cursor: pointer;
+}
+#electronics-slider {
+    position: relative;
+    margin-top: 20px; /* Add some space above */
+}
+
+.electronics-slides {
+    display: flex; /* Align slides in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+#electronics-slider img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+    display: none; /* Hide images by default */
+}
+
+#electronics-slider img.active {
+    display: block; /* Show the active slide */
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+
+
+#aa:hover{
+    border-radius: 5px;
+    background-color: lightgray;
+    color: yellow;
+    
+}
+.slide {
+    cursor: pointer; /* Change cursor to pointer */
+    flex: 0 0 100%; /* Ensure each slide takes the full width */
+}
+
+#electronics-slider img {
+    width: 100%; /* Make images responsive */
+    height: 200px; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+    display: none; /* Hide images by default */
+}
+
+#electronics-slider img.active {
+    display: block; /* Show the active slide */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Align items to the edges */
+    align-items: center; /* Center items vertically */
+    background-color: #37475A;
+    padding: 5px 20px; /* Decrease padding for a smaller nav */
+    font-size: 14px; 
+    /* Adjust font size */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 25px;
+}
+
+nav li {
+    margin-right: 15px; /* Decrease margin between items */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#timer {
+    color: white;
+    font-weight: bold;
+    padding-left: 20px; 
+    margin-top: -10px;
+    font-size: 20px;
+    /* Maintain space between nav items and timer */
+}
+#l1{
+    background-color: transparent;
+    border-radius: 6px;
+}
+#banner {
+    position: relative;
+    overflow: hidden; /* Hide overflow for the slides */
+    width: 100%;
+    height: 350px; /* Set max height for the banner */
+}
+
+.slides {
+    display: flex; /* Align slides in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+#banner img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: none; 
+    height: 300px;/* Hide images by default */
+}
+
+#banner img.active {
+    display: block; /* Show the active slide */
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: #232F3E;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#f2{
+    font-size: 17px;margin-top: -22px;margin-left :120px; color: white;
+}
+
